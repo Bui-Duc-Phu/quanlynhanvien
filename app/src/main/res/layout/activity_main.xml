@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:background="#F4EB9A"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Mã số NV">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/maso_nv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:hint="Họ và tên">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ho_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:hint="Chức vụ">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/chuc_vu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phòng"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:paddingTop="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_phong"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:text="Ngày sinh"
+                android:paddingTop="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_ngay_sinh"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:hint="Điện thoại">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dien_thoai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:inputType="phone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngày vào làm"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:paddingTop="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_ngay_vao_lam"
+                android:layout_width="match_parent"
+                android:textSize="13sp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#A1E3A4"
+            android:padding="10sp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Hệ số lương">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/he_so_luong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Phụ cấp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phu_cap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:hint="Lương">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/luong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/nut1_tinhtien"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cacular"
+                android:layout_marginStart="5dp"
+                />
+            <ImageButton
+                android:id="@+id/nut2_addNhanVien"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/add_person"
+                />
+            <ImageButton
+                android:id="@+id/nut3_DeleteNhanVien"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/delete_persion"
+                android:layout_marginStart="10dp"
+                />
+            <ImageButton
+                android:id="@+id/nut4_SuaTTNhanVien"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/checklist"
+                android:layout_marginStart="10dp"
+                />
+            <ImageButton
+                android:id="@+id/nut5_exit"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/exit"
+                android:layout_marginStart="5dp"
+                />
+
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
+            android:id="@+id/ListNV"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/custom_nhan_vien"
+            />
+    </LinearLayout>
+</ScrollView>

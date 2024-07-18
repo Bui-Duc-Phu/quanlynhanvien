@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingStart="10dp"
+        android:background="@drawable/item1"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/maNV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã NV : 001"
+            android:textSize="15dp"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/nameNV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ va tên : Bùi Đức Phú"
+            android:textSize="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/maNV"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SDT : 001232323"
+            android:textSize="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/nameNV"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/ngaySinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày sinh: 25/01/2020"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/Phong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phong : ke toan"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ngaySinh"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/chuc_vu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHuc vụ : ke toan"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/Phong"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/heSoLuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="he  so luong :20"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/phone"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/phuCap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phu cap : 2000"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/heSoLuong"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/luong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="luong : 200000"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/phuCap"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/phai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phai : nam"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/chuc_vu"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/ngayVaoLma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngay vao lam : 22/2/2220"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/phai"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
